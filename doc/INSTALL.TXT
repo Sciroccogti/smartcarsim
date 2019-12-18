@@ -1,0 +1,52 @@
+Linux 下的安装方法
+
+1. 安装 freeglut
+    安装 freeglut3
+    安装 freeglut3-dev
+
+2. 安装 OpenDE
+    下载 OpenDE http://sourceforge.net/p/opende/
+    按照 OpenDE 发布包内 INSTALL 文件的要求安装
+    在运行 configure 脚本时添加参数 --enable-double-precision
+
+3. 进入 linux 编译目录
+    使当前目录处于 SCS-1.0 根目录下
+    cd build
+    cd linux
+
+4. 编译并运行
+    注册本软件（详查LICENSE）
+    make
+
+
+VS20xx 下的安装方法
+
+1. 安装 VS20xx
+    下载 VS20xx http://msdn.microsoft.com/en-US/vstudio
+    安装 VS20xx
+    安装时至少要勾选上 VC++ 组件
+
+2. 打开解决方案文件
+    进入 SCS-1.0.1\build\VS20xx
+    双击解决方案文件 VS20xx.sln
+
+3. 选择所需的解决方案配置
+    菜单 \ 生成 \ 配置管理器 \ 活动解决方案配置 \ (Release/Debug)
+    Menu \ Build \ Configuration Manager \ Active solution configuration \ (Release/Debug)
+    或者直接在工具栏上选取
+
+4. 编译
+    菜单 \ 生成 \ 生成解决方案
+    Menu \ Build \ Build Solution
+
+5. 配置运行目录
+    点选解决方案资源管理器(Solution Explorer)中的项目 ai
+    菜单 \ 项目 \ 属性 \ 配置属性 \ 调试 \ 工作目录
+    Memu \ Project \ Property \ Configuration Properties \ Debugging \ Working Directory
+    在此栏中写入
+    $(SolutionDir)..\..\ai
+
+6. 运行
+    注册本软件（详查LICENSE.TXT）
+    菜单 \ 调试 \ 启动调试
+    Menu \ Debug \ Star Debugging
