@@ -1,6 +1,6 @@
 #include "GL/glut.h"
 #include "scs.h"
-#include "cstring.h"
+#include <cstring>
 
 unsigned char graph[GRAPH_HEIGHT][GRAPH_WIDTH];
 
