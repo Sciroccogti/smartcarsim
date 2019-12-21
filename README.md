@@ -1,4 +1,6 @@
-﻿# SCS 智能车仿真平台
+# SCS 智能车仿真平台
+
+搬运自[SourceForge项目](https://sourceforge.net/p/smartcarsim/)，已获得作者[yukunlinykl]授权
 
 以全国大学生智能车竞赛为背景，
 依照智能车竞赛规则建立仿真模型，旨在为广大参与智能车
