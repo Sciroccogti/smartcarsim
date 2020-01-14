@@ -1,7 +1,7 @@
 /*
- *	VERSION:	SCS-1.0.1
- *	DATE:		2013.Sep.1
- *	AUTHOR:		Yu Kunlin
+ * VERSION: SCS-1.0.1
+ * DATE:    2013.Sep.1
+ * AUTHOR:  Yu Kunlin
  */
 
 #include <stdio.h>
@@ -367,8 +367,8 @@ void motion(int x, int y)  // been call while draging mouse
     sVector delta(x - prex, prey - y, 0);
     delta.RotateZ(-(hpr[0] + h) * DEG_TO_RAD + M_PI_2);
     ViewPointDelta += delta;
-    //	ViewPointDelta.print ();
-    //	ViewPoint += delta;
+    // ViewPointDelta.print ();
+    // ViewPoint += delta;
   }
   prex = x;
   prey = y;
@@ -376,5 +376,5 @@ void motion(int x, int y)  // been call while draging mouse
 
 void Reshape(int width, int height) {
   printf("%d %d\n", width, height);
-  //	glutReshapeWindow (WINDOW_WIDTH_CUSTOM, WINDOW_HEIGHT_CUSTOM);
+  // glutReshapeWindow (WINDOW_WIDTH_CUSTOM, WINDOW_HEIGHT_CUSTOM);
 }

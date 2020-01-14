@@ -1,7 +1,7 @@
 /*
- *	VERSION:	SCS-1.0.1
- *	DATE:		2013.Sep.1
- *	AUTHOR:		Yu Kunlin
+ * VERSION: SCS-1.0.1
+ * DATE:    2013.Sep.1
+ * AUTHOR:  Yu Kunlin
  */
 
 #ifndef _TRACK_H_
