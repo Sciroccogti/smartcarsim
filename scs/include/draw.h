@@ -11,48 +11,52 @@
 
 #define CUSTOMWINDOWNUM 16
 
-#define WINDOW_POS_X		100
-#ifdef	WIN32
-#	define WINDOW_POS_Y		10
+#define WINDOW_POS_X 100
+#ifdef WIN32
+#define WINDOW_POS_Y 10
 #else
-#	define WINDOW_POS_Y		30
+#define WINDOW_POS_Y 30
 #endif
 
-#define WINDOW_WIDTH_GOD_0		(int)(800)
-#define WINDOW_HEIGHT_GOD_0		(int)(600)
+#define WINDOW_WIDTH_GOD_0 (int)(800)
+#define WINDOW_HEIGHT_GOD_0 (int)(600)
 
-#define WINDOW_WIDTH_GOD_1		(int)(640)
-#define WINDOW_HEIGHT_GOD_1		(int)(480)
+#define WINDOW_WIDTH_GOD_1 (int)(640)
+#define WINDOW_HEIGHT_GOD_1 (int)(480)
 
-#define WINDOW_WIDTH_GOD_2		WINDOW_WIDTH_CUSTOM
-#define WINDOW_HEIGHT_GOD_2		WINDOW_HEIGHT_CUSTOM
+#define WINDOW_WIDTH_GOD_2 WINDOW_WIDTH_CUSTOM
+#define WINDOW_HEIGHT_GOD_2 WINDOW_HEIGHT_CUSTOM
 
-#define WINDOW_WIDTH_CAR		GRAPH_WIDTH
-#define WINDOW_HEIGHT_CAR		GRAPH_HEIGHT
+#define WINDOW_WIDTH_CAR GRAPH_WIDTH
+#define WINDOW_HEIGHT_CAR GRAPH_HEIGHT
 
-#define WINDOW_WIDTH_CUSTOM		QVGA_WIDTH
-#define WINDOW_HEIGHT_CUSTOM	QVGA_HEIGHT
+#define WINDOW_WIDTH_CUSTOM QVGA_WIDTH
+#define WINDOW_HEIGHT_CUSTOM QVGA_HEIGHT
 
-typedef void (*pFunc) ();
+typedef void (*pFunc)();
 
 enum ViewType {
-	over,
-	car,
-	bird,
-	birdf,
-	hard,
-	back,
-	overf,
-	soft,
-	mouse,
+  over,
+  car,
+  bird,
+  birdf,
+  hard,
+  back,
+  overf,
+  soft,
+  mouse,
 };
 
 enum DriveMode {
-	play,ai,debug,
+  play,
+  ai,
+  debug,
 };
 
 enum CarType {
-	camera,electromagnetic,balance,
+  camera,
+  electromagnetic,
+  balance,
 };
 
 extern CarType cartype;
@@ -75,7 +79,7 @@ extern double height;
 extern double h;
 extern double hpr[3];
 
-void ClearViewVar ();
+void ClearViewVar();
 void DrawInit();
 
 #endif
