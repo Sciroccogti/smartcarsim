@@ -1,3 +1,4 @@
+#include <string>
 #include <cstring>
 #include "GL/glut.h"
 #include "scs.h"
@@ -125,7 +126,7 @@ int main(int argc, char *argv[]) {
       sSetAiFunc(AI_Electromagnetic);
       break;
   }
-  sSetTrack(strcat("../track/", track));
+  sSetTrack((std::string("../track/") + std::string(track)).c_str());
   sRegister("I've read the license. And I accept it.");
   scsMainLoop(&argc, argv);
 

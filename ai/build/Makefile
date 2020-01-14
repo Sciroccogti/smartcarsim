@@ -6,7 +6,7 @@ AI_SRC_DIR = ../src
 AI_INC_DIR = ../include
 VPATH = $(SCS_SRC_DIR):$(SCS_INC_DIR):$(AI_SRC_DIR):$(AI_INC_DIR)
 
-CXX = g++
+CXX = g++ -std=c++11
 CXXFLAGS = -I$(SCS_INC_DIR) -I$(AI_INC_DIR) -g -DdDOUBLE
 SCSOBJ = simulation.o draw.o car.o track.o api.o vector.o ui.o
 AIOBJ = main.o
