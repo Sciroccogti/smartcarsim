@@ -100,7 +100,7 @@ void AI_Balance() {
 int main(int argc, char *argv[]) {
   // printf("\n\nargc=%d, argv[0]=%s\n\n", argc, argv[0]);
   int type = 0;
-  std::string = "final8.trk";
+  std::string track = "final8.trk";
   if (argc > 1) {
     type = atoi(argv[1]);
     if (argc > 2) {

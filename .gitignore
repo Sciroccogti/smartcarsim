@@ -1,5 +1,6 @@
 *.o
 *.a
+scs_ai/
 bin/
 CMakeFiles/
 CMakeCache.txt

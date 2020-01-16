@@ -1,6 +1,7 @@
 # SCS 智能车仿真平台
 
-搬运自[SourceForge项目](https://sourceforge.net/p/smartcarsim/)，已获得作者[yukunlinykl]授权
+搬运自[SourceForge项目](https://sourceforge.net/p/smartcarsim/)，
+已获得作者[kunlinyu](https://github.com/kunlinyu)授权。
 
 以全国大学生智能车竞赛为背景，
 依照智能车竞赛规则建立仿真模型，旨在为广大参与智能车
@@ -11,6 +12,38 @@
 描述并绘制智能车以及赛道的机械模型，仿真智能车行进的
 物理过程。
 
+## 使用方法
+
+### Cmake
+
+以Linux为例：
+```Bash
+# 安装scs
+cd scs
+mkdir bin
+cd bin
+cmake ..
+make install
+```
+
+安装控制器:
+```Bash
+# 安装ai
+cd ai
+mkdir bin
+cd bin
+cmake ..
+make install
+```
+
+运行控制器:
+```Bash
+cd ai/scs_ai
+./scs_ai
+# 可接参数，如 ./scs_ai 1 province8.trk 表示用直立车跑province8赛道
+```
+<!-- 请先阅读 doc/ 目录下的用户协议 LICENSE.TXT ，然后阅读
+同目录下的 INSTALL.TXT 文件。 -->
 
 ## 版本信息
 
@@ -186,12 +219,6 @@ SCS-1.0.1
 
 25 directories, 108 files
 ```
-
-## 使用方法
-
-请先阅读 doc/ 目录下的用户协议 LICENSE.TXT ，然后阅读
-同目录下的 INSTALL.TXT 文件。
-
 
 ## 联系方式
 
