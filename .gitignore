@@ -1,3 +1,5 @@
 *.o
 *.a
-ai
+bin/
+CMakeFiles/
+CMakeCache.txt

@@ -1,17 +1,17 @@
 /*
- *	VERSION:	SCS-1.0.1
- *	DATE:		2013.Sep.1
- *	AUTHOR:		Yu Kunlin
+ * VERSION: SCS-1.0.1
+ * DATE:    2013.Sep.1
+ * AUTHOR:  Yu Kunlin
  */
 
 #ifndef _SIMULATION_H_
-#define _SIMULATION_H_ 
+#define _SIMULATION_H_
 
 #include <ode/common.h>
 
-extern dWorldID	world;
-extern dSpaceID	space;
-extern dJointGroupID	contactgroup;
+extern dWorldID world;
+extern dSpaceID space;
+extern dJointGroupID contactgroup;
 
 extern int MotorDutyL;
 extern int MotorDutyR;

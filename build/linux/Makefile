@@ -1,18 +1,23 @@
 PROJ = ai
 SCS = libscs
+
 SCS_SRC_DIR = ../../scs/src
 SCS_INC_DIR = ../../scs/include
+
 AI_SRC_DIR = ../../ai/src
 AI_INC_DIR = ../../ai/include
+
+3RDPARTY_INC_DIR = ../../build/include
+
 VPATH = $(SCS_SRC_DIR):$(SCS_INC_DIR):$(AI_SRC_DIR):$(AI_INC_DIR)
 
 CXX = g++
-CXXFLAGS = -I$(SCS_INC_DIR) -I$(AI_INC_DIR) -g -DdDOUBLE
+CXXFLAGS = -I$(SCS_INC_DIR) -I$(AI_INC_DIR) -I$(3RDPARTY_INC_DIR) -g -DdDOUBLE
 SCSOBJ = simulation.o draw.o car.o track.o api.o vector.o ui.o
 AIOBJ = main.o
 LIB = -lscs -lode -lglut -lGLU -lm -lGL -lz -lrt -lm -lpthread
 
-all: $(SCS).a $(PROJ) run
+all: $(SCS).a $(PROJ)
 
 $(SCS).a: $(SCSOBJ)
 	ar rcs $@ $^
