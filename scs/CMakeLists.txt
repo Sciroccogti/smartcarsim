@@ -13,4 +13,5 @@ add_library(${PROJECT_NAME}
   src/vector.cpp
 )
 
-install(TARGETS ${PROJECT_NAME} DESTINATION .)
+set(CMAKE_INSTALL_PREFIX "${CMAKE_SOURCE_DIR}/../bin")
+install(TARGETS ${PROJECT_NAME} DESTINATION ./)
